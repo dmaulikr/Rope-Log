@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54D67FFB19380F7500F13D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFA19380F7500F13D15 /* Foundation.framework */; };
+		54D67FFD19380F7500F13D15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFC19380F7500F13D15 /* CoreGraphics.framework */; };
+		54D67FFF19380F7500F13D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFE19380F7500F13D15 /* UIKit.framework */; };
+		54D6800119380F7500F13D15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D6800019380F7500F13D15 /* CoreData.framework */; };
+		54D6800719380F7500F13D15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6800519380F7500F13D15 /* InfoPlist.strings */; };
+		54D6800919380F7500F13D15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6800819380F7500F13D15 /* main.m */; };
+		54D6800D19380F7500F13D15 /* BIGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6800C19380F7500F13D15 /* BIGAppDelegate.m */; };
+		54D6801019380F7500F13D15 /* Rope_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54D6800E19380F7500F13D15 /* Rope_Log.xcdatamodeld */; };
+		54D6801219380F7500F13D15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D6801119380F7500F13D15 /* Images.xcassets */; };
+		54D6801919380F7500F13D15 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D6801819380F7500F13D15 /* XCTest.framework */; };
+		54D6801A19380F7500F13D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFA19380F7500F13D15 /* Foundation.framework */; };
+		54D6801B19380F7500F13D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFE19380F7500F13D15 /* UIKit.framework */; };
+		54D6801C19380F7500F13D15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D6800019380F7500F13D15 /* CoreData.framework */; };
+		54D6802419380F7500F13D15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6802219380F7500F13D15 /* InfoPlist.strings */; };
+		54D6802619380F7500F13D15 /* Rope_LogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6802519380F7500F13D15 /* Rope_LogTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54D6801D19380F7500F13D15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54D67FEF19380F7500F13D15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54D67FF619380F7500F13D15;
+			remoteInfo = "Rope Log";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54D67FF719380F7500F13D15 /* Rope Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rope Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D67FFA19380F7500F13D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54D67FFC19380F7500F13D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54D67FFE19380F7500F13D15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54D6800019380F7500F13D15 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		54D6800419380F7500F13D15 /* Rope Log-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rope Log-Info.plist"; sourceTree = "<group>"; };
+		54D6800619380F7500F13D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54D6800819380F7500F13D15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54D6800A19380F7500F13D15 /* Rope Log-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rope Log-Prefix.pch"; sourceTree = "<group>"; };
+		54D6800B19380F7500F13D15 /* BIGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIGAppDelegate.h; sourceTree = "<group>"; };
+		54D6800C19380F7500F13D15 /* BIGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIGAppDelegate.m; sourceTree = "<group>"; };
+		54D6800F19380F7500F13D15 /* Rope_Log.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rope_Log.xcdatamodel; sourceTree = "<group>"; };
+		54D6801119380F7500F13D15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		54D6801719380F7500F13D15 /* Rope LogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rope LogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D6801819380F7500F13D15 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		54D6802119380F7500F13D15 /* Rope LogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rope LogTests-Info.plist"; sourceTree = "<group>"; };
+		54D6802319380F7500F13D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54D6802519380F7500F13D15 /* Rope_LogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rope_LogTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D67FF419380F7500F13D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D67FFD19380F7500F13D15 /* CoreGraphics.framework in Frameworks */,
+				54D6800119380F7500F13D15 /* CoreData.framework in Frameworks */,
+				54D67FFF19380F7500F13D15 /* UIKit.framework in Frameworks */,
+				54D67FFB19380F7500F13D15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D6801419380F7500F13D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D6801919380F7500F13D15 /* XCTest.framework in Frameworks */,
+				54D6801C19380F7500F13D15 /* CoreData.framework in Frameworks */,
+				54D6801B19380F7500F13D15 /* UIKit.framework in Frameworks */,
+				54D6801A19380F7500F13D15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54D67FEE19380F7500F13D15 = {
+			isa = PBXGroup;
+			children = (
+				54D6800219380F7500F13D15 /* Rope Log */,
+				54D6801F19380F7500F13D15 /* Rope LogTests */,
+				54D67FF919380F7500F13D15 /* Frameworks */,
+				54D67FF819380F7500F13D15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54D67FF819380F7500F13D15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D67FF719380F7500F13D15 /* Rope Log.app */,
+				54D6801719380F7500F13D15 /* Rope LogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D67FF919380F7500F13D15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D67FFA19380F7500F13D15 /* Foundation.framework */,
+				54D67FFC19380F7500F13D15 /* CoreGraphics.framework */,
+				54D67FFE19380F7500F13D15 /* UIKit.framework */,
+				54D6800019380F7500F13D15 /* CoreData.framework */,
+				54D6801819380F7500F13D15 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54D6800219380F7500F13D15 /* Rope Log */ = {
+			isa = PBXGroup;
+			children = (
+				54D6800B19380F7500F13D15 /* BIGAppDelegate.h */,
+				54D6800C19380F7500F13D15 /* BIGAppDelegate.m */,
+				54D6801119380F7500F13D15 /* Images.xcassets */,
+				54D6800E19380F7500F13D15 /* Rope_Log.xcdatamodeld */,
+				54D6800319380F7500F13D15 /* Supporting Files */,
+			);
+			path = "Rope Log";
+			sourceTree = "<group>";
+		};
+		54D6800319380F7500F13D15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54D6800419380F7500F13D15 /* Rope Log-Info.plist */,
+				54D6800519380F7500F13D15 /* InfoPlist.strings */,
+				54D6800819380F7500F13D15 /* main.m */,
+				54D6800A19380F7500F13D15 /* Rope Log-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54D6801F19380F7500F13D15 /* Rope LogTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D6802519380F7500F13D15 /* Rope_LogTests.m */,
+				54D6802019380F7500F13D15 /* Supporting Files */,
+			);
+			path = "Rope LogTests";
+			sourceTree = "<group>";
+		};
+		54D6802019380F7500F13D15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54D6802119380F7500F13D15 /* Rope LogTests-Info.plist */,
+				54D6802219380F7500F13D15 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54D67FF619380F7500F13D15 /* Rope Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D6802919380F7500F13D15 /* Build configuration list for PBXNativeTarget "Rope Log" */;
+			buildPhases = (
+				54D67FF319380F7500F13D15 /* Sources */,
+				54D67FF419380F7500F13D15 /* Frameworks */,
+				54D67FF519380F7500F13D15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rope Log";
+			productName = "Rope Log";
+			productReference = 54D67FF719380F7500F13D15 /* Rope Log.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54D6801619380F7500F13D15 /* Rope LogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D6802C19380F7500F13D15 /* Build configuration list for PBXNativeTarget "Rope LogTests" */;
+			buildPhases = (
+				54D6801319380F7500F13D15 /* Sources */,
+				54D6801419380F7500F13D15 /* Frameworks */,
+				54D6801519380F7500F13D15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54D6801E19380F7500F13D15 /* PBXTargetDependency */,
+			);
+			name = "Rope LogTests";
+			productName = "Rope LogTests";
+			productReference = 54D6801719380F7500F13D15 /* Rope LogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D67FEF19380F7500F13D15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BIG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Big Chicken";
+				TargetAttributes = {
+					54D6801619380F7500F13D15 = {
+						TestTargetID = 54D67FF619380F7500F13D15;
+					};
+				};
+			};
+			buildConfigurationList = 54D67FF219380F7500F13D15 /* Build configuration list for PBXProject "Rope Log" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54D67FEE19380F7500F13D15;
+			productRefGroup = 54D67FF819380F7500F13D15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54D67FF619380F7500F13D15 /* Rope Log */,
+				54D6801619380F7500F13D15 /* Rope LogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54D67FF519380F7500F13D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D6800719380F7500F13D15 /* InfoPlist.strings in Resources */,
+				54D6801219380F7500F13D15 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D6801519380F7500F13D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D6802419380F7500F13D15 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54D67FF319380F7500F13D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D6800919380F7500F13D15 /* main.m in Sources */,
+				54D6800D19380F7500F13D15 /* BIGAppDelegate.m in Sources */,
+				54D6801019380F7500F13D15 /* Rope_Log.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D6801319380F7500F13D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D6802619380F7500F13D15 /* Rope_LogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54D6801E19380F7500F13D15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54D67FF619380F7500F13D15 /* Rope Log */;
+			targetProxy = 54D6801D19380F7500F13D15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54D6800519380F7500F13D15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D6800619380F7500F13D15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54D6802219380F7500F13D15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D6802319380F7500F13D15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54D6802719380F7500F13D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54D6802819380F7500F13D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54D6802A19380F7500F13D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rope Log/Rope Log-Prefix.pch";
+				INFOPLIST_FILE = "Rope Log/Rope Log-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54D6802B19380F7500F13D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rope Log/Rope Log-Prefix.pch";
+				INFOPLIST_FILE = "Rope Log/Rope Log-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		54D6802D19380F7500F13D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rope Log.app/Rope Log";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rope Log/Rope Log-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rope LogTests/Rope LogTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		54D6802E19380F7500F13D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rope Log.app/Rope Log";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rope Log/Rope Log-Prefix.pch";
+				INFOPLIST_FILE = "Rope LogTests/Rope LogTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54D67FF219380F7500F13D15 /* Build configuration list for PBXProject "Rope Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D6802719380F7500F13D15 /* Debug */,
+				54D6802819380F7500F13D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D6802919380F7500F13D15 /* Build configuration list for PBXNativeTarget "Rope Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D6802A19380F7500F13D15 /* Debug */,
+				54D6802B19380F7500F13D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54D6802C19380F7500F13D15 /* Build configuration list for PBXNativeTarget "Rope LogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D6802D19380F7500F13D15 /* Debug */,
+				54D6802E19380F7500F13D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54D6800E19380F7500F13D15 /* Rope_Log.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54D6800F19380F7500F13D15 /* Rope_Log.xcdatamodel */,
+			);
+			currentVersion = 54D6800F19380F7500F13D15 /* Rope_Log.xcdatamodel */;
+			path = Rope_Log.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54D67FEF19380F7500F13D15 /* Project object */;
+}
