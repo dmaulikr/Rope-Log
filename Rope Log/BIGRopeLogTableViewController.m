@@ -9,6 +9,7 @@
 #import "BIGRopeLogTableViewController.h"
 #import "BIGCoreDataStack.h"
 #import "BIGLogDetailViewController.h"
+#import "BIGLogCell.h"
 
 
 @interface BIGRopeLogTableViewController () <NSFetchedResultsControllerDelegate>
@@ -70,10 +71,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    BIGLogCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     BIGRopeLog *log = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = log.body;
+    [cell configureCellForLog:log];
     
     return cell;
 }
@@ -93,6 +94,12 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
     return [sectionInfo name];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BIGRopeLog *log = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    return [BIGLogCell heightForEntry:log];
+
 }
 
 #pragma mark - Fetch Request
@@ -148,7 +155,7 @@
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"BIGRopeLog"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"logForRope = %@", self.thisRope];
     
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"body" ascending:YES]];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]];
     fetchRequest.predicate = predicate;
     
     return fetchRequest;

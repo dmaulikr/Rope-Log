@@ -42,6 +42,12 @@
     [self.fetchedResultsController performFetch:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -70,8 +76,12 @@
     BIGRopeList *rope = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = rope.name;
     
+    
+    
     return cell;
 }
+
+
 
 #pragma mark - Fetch
 
@@ -87,6 +97,14 @@
     _fetchedResultsController.delegate = self;
     
     return _fetchedResultsController;
+}
+
+- (NSFetchRequest *)ropeListFetchRequest {
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"BIGRopeList"];
+    
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES]];
+    
+    return fetchRequest;
 }
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
@@ -122,13 +140,6 @@
     [self.tableView endUpdates];
 }
 
-- (NSFetchRequest *)ropeListFetchRequest {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"BIGRopeList"];
-    
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
-    
-    return fetchRequest;
-}
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewCellEditingStyleDelete;

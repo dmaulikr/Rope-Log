@@ -10,6 +10,8 @@
 		541EA8FE19402FA200CE6114 /* BIGRopeLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541EA8FD19402FA200CE6114 /* BIGRopeLogTableViewController.m */; };
 		541EA9011945135700CE6114 /* BIGNewLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541EA9001945135700CE6114 /* BIGNewLogViewController.m */; };
 		545ECCED1960BF3C003288BC /* BIGLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545ECCEC1960BF3C003288BC /* BIGLogDetailViewController.m */; };
+		549BDA0519624EF900C7A685 /* BIGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549BDA0419624EF900C7A685 /* BIGNavigationController.m */; };
+		549BDA0B1963995600C7A685 /* BIGLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 549BDA0A1963995600C7A685 /* BIGLogCell.m */; };
 		54D67FFB19380F7500F13D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFA19380F7500F13D15 /* Foundation.framework */; };
 		54D67FFD19380F7500F13D15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFC19380F7500F13D15 /* CoreGraphics.framework */; };
 		54D67FFF19380F7500F13D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D67FFE19380F7500F13D15 /* UIKit.framework */; };
@@ -50,6 +52,10 @@
 		541EA9001945135700CE6114 /* BIGNewLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGNewLogViewController.m; sourceTree = "<group>"; };
 		545ECCEB1960BF3C003288BC /* BIGLogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIGLogDetailViewController.h; sourceTree = "<group>"; };
 		545ECCEC1960BF3C003288BC /* BIGLogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGLogDetailViewController.m; sourceTree = "<group>"; };
+		549BDA0319624EF900C7A685 /* BIGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIGNavigationController.h; sourceTree = "<group>"; };
+		549BDA0419624EF900C7A685 /* BIGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGNavigationController.m; sourceTree = "<group>"; };
+		549BDA091963995600C7A685 /* BIGLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIGLogCell.h; sourceTree = "<group>"; };
+		549BDA0A1963995600C7A685 /* BIGLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGLogCell.m; sourceTree = "<group>"; };
 		54D67FF719380F7500F13D15 /* Rope Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rope Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D67FFA19380F7500F13D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54D67FFC19380F7500F13D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +85,7 @@
 		54D6803B193823CE00F13D15 /* BIGNewRopeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGNewRopeViewController.m; sourceTree = "<group>"; };
 		54D6803D19382E1600F13D15 /* BIGRopeListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIGRopeListTableViewController.h; sourceTree = "<group>"; };
 		54D6803E19382E1600F13D15 /* BIGRopeListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIGRopeListTableViewController.m; sourceTree = "<group>"; };
+		77F4B037198EE20B00D3FA9B /* Rope_Log 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Rope_Log 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +170,10 @@
 				54D680361938172F00F13D15 /* BIGRopeLog.m */,
 				54D6800319380F7500F13D15 /* Supporting Files */,
 				54D680381938226B00F13D15 /* MainStoryboard.storyboard */,
+				549BDA0319624EF900C7A685 /* BIGNavigationController.h */,
+				549BDA0419624EF900C7A685 /* BIGNavigationController.m */,
+				549BDA091963995600C7A685 /* BIGLogCell.h */,
+				549BDA0A1963995600C7A685 /* BIGLogCell.m */,
 			);
 			path = "Rope Log";
 			sourceTree = "<group>";
@@ -299,9 +310,11 @@
 				54D680341938172E00F13D15 /* BIGRopeList.m in Sources */,
 				541EA9011945135700CE6114 /* BIGNewLogViewController.m in Sources */,
 				541EA8FE19402FA200CE6114 /* BIGRopeLogTableViewController.m in Sources */,
+				549BDA0519624EF900C7A685 /* BIGNavigationController.m in Sources */,
 				54D680371938172F00F13D15 /* BIGRopeLog.m in Sources */,
 				54D6803F19382E1600F13D15 /* BIGRopeListTableViewController.m in Sources */,
 				54D6800D19380F7500F13D15 /* BIGAppDelegate.m in Sources */,
+				549BDA0B1963995600C7A685 /* BIGLogCell.m in Sources */,
 				54D6803C193823CE00F13D15 /* BIGNewRopeViewController.m in Sources */,
 				54D6801019380F7500F13D15 /* Rope_Log.xcdatamodeld in Sources */,
 			);
@@ -517,9 +530,10 @@
 		54D6800E19380F7500F13D15 /* Rope_Log.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				77F4B037198EE20B00D3FA9B /* Rope_Log 2.xcdatamodel */,
 				54D6800F19380F7500F13D15 /* Rope_Log.xcdatamodel */,
 			);
-			currentVersion = 54D6800F19380F7500F13D15 /* Rope_Log.xcdatamodel */;
+			currentVersion = 77F4B037198EE20B00D3FA9B /* Rope_Log 2.xcdatamodel */;
 			path = Rope_Log.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

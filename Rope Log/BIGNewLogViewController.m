@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 @end
 
 @implementation BIGNewLogViewController
@@ -32,6 +33,8 @@
     [super viewDidLoad];
     NSLog(@"If this shows up that means we did it! %@", self.theRope);
     // Do any additional setup after loading the view.
+    
+    [self.datePicker addTarget:self action:@selector(datePickerChanged:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,12 +51,19 @@
     BIGCoreDataStack *coreDataStack = [BIGCoreDataStack defaultStack];
     BIGRopeLog *newLog = [NSEntityDescription insertNewObjectForEntityForName:@"BIGRopeLog" inManagedObjectContext:coreDataStack.managedObjectContext];
 
-    newLog.date = [[NSDate date] timeIntervalSince1970];
+    newLog.date = [self.datePicker.date timeIntervalSince1970];
     newLog.body = self.textField.text;
     newLog.logForRope = self.theRope;
 
     NSLog(@"%@", newLog.body);
     [coreDataStack saveContext];
+}
+
+- (void)datePickerChanged:(UIDatePicker *)datePicker {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy HH:mm"];
+    NSString *strDate = [dateFormatter stringFromDate:datePicker.date];
+    NSLog(@"%@", strDate);
 }
 
 - (IBAction)cancelWasPressed:(id)sender {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>89BBF30D-7B2A-42F4-A904-91EA8CDDB452</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rope Log</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DDD4A56D-A279-42D9-9214-CAE03F7289E4</key>
+		<string>https://github.com/kjohnson423/Rope-Log.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Rope Log.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DDD4A56D-A279-42D9-9214-CAE03F7289E4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kjohnson423/Rope-Log.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DDD4A56D-A279-42D9-9214-CAE03F7289E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DDD4A56D-A279-42D9-9214-CAE03F7289E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Rope Log</string>
+		</dict>
+	</array>
+</dict>
+</plist>
