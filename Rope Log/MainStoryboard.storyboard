@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hXF-nB-D4C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hXF-nB-D4C">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -8,17 +8,21 @@
         <scene sceneID="iZb-bI-3u2">
             <objects>
                 <viewController id="bgs-iq-PNa" customClass="BIGNewRopeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="USo-I7-te4"/>
+                        <viewControllerLayoutGuide type="bottom" id="hC7-Ye-xJ2"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WRS-8t-O0q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="eFi-09-iJb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFi-09-iJb">
                                 <rect key="frame" x="20" y="238" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="eas-vK-fST">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eas-vK-fST">
                                 <rect key="frame" x="0.0" y="68" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="428820666.44411999">
@@ -74,6 +78,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="x6f-OG-7Ro">
             <objects>
                 <viewController id="wMG-s1-Qz8" customClass="BIGLogDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zcl-f3-Yfa"/>
+                        <viewControllerLayoutGuide type="bottom" id="wx3-3j-WhE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RMU-Qz-oxc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -143,17 +151,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="2gG-3s-cLI">
             <objects>
                 <viewController id="Pt8-A0-aQI" customClass="BIGNewLogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B6z-AD-uvZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3X-I7-Ljv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7oW-cY-WZW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="kua-Ww-xMG">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kua-Ww-xMG">
                                 <rect key="frame" x="20" y="225" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="qFr-ob-7ei">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qFr-ob-7ei">
                                 <rect key="frame" x="-4" y="64" width="329" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="427772732.44784498">
@@ -212,45 +224,70 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="je0-en-Pys">
             <objects>
                 <tableViewController id="gXG-vh-UvB" customClass="BIGRopeLogTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="22" sectionFooterHeight="22" id="DfZ-9o-k0Q">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="22" sectionFooterHeight="22" id="DfZ-9o-k0Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="159" id="coL-SC-jAi" customClass="BIGLogCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="159"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="97" id="coL-SC-jAi" customClass="BIGLogCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="coL-SC-jAi" id="VuI-qG-5ER">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="158"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="96"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8nu-fg-PdC">
-                                            <rect key="frame" x="122" y="10" width="145" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="8nu-fg-PdC">
+                                            <rect key="frame" x="20" y="7" width="52" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" id="UC7-32-yJu">
-                                            <rect key="frame" x="122" y="39" width="145" height="78"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Body Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="UC7-32-yJu">
+                                            <rect key="frame" x="87" y="7" width="200" height="21"/>
                                             <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.23529411764705882" green="0.30588235294117649" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qe7-MQ-yFD">
-                                            <rect key="frame" x="225" y="125" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-MQ-yFD">
+                                            <rect key="frame" x="20" y="29" width="52" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="tRk-WL-LwK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                             <color key="textColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WBP-m8-gEC">
+                                            <rect key="frame" x="20" y="58" width="52" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" red="0.41176474094390869" green="0.69803923368453979" blue="0.7882353663444519" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="UC7-32-yJu" firstAttribute="leading" secondItem="8nu-fg-PdC" secondAttribute="trailing" constant="23" id="1zv-hE-X0b"/>
+                                        <constraint firstItem="UC7-32-yJu" firstAttribute="leading" secondItem="WBP-m8-gEC" secondAttribute="trailing" constant="23" id="32Q-uB-Jaa"/>
+                                        <constraint firstItem="8nu-fg-PdC" firstAttribute="leading" secondItem="VuI-qG-5ER" secondAttribute="leading" constant="20" id="L3L-Bl-mkz"/>
+                                        <constraint firstItem="Qe7-MQ-yFD" firstAttribute="leading" secondItem="VuI-qG-5ER" secondAttribute="leading" constant="20" id="Mp9-pg-icw"/>
+                                        <constraint firstItem="WBP-m8-gEC" firstAttribute="leading" secondItem="VuI-qG-5ER" secondAttribute="leading" constant="20" id="RfV-ec-0PM"/>
+                                        <constraint firstItem="UC7-32-yJu" firstAttribute="leading" secondItem="Qe7-MQ-yFD" secondAttribute="trailing" constant="23" id="WHy-ET-FDj"/>
+                                        <constraint firstItem="UC7-32-yJu" firstAttribute="leading" secondItem="WBP-m8-gEC" secondAttribute="trailing" constant="23" id="WIb-Sb-Bk2"/>
+                                        <constraint firstItem="8nu-fg-PdC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VuI-qG-5ER" secondAttribute="top" constant="5" id="bFo-je-sut"/>
+                                        <constraint firstItem="8nu-fg-PdC" firstAttribute="top" secondItem="VuI-qG-5ER" secondAttribute="top" constant="5" id="g4a-iR-Vyr"/>
+                                        <constraint firstItem="UC7-32-yJu" firstAttribute="top" secondItem="VuI-qG-5ER" secondAttribute="top" constant="7" id="g5G-MB-k16"/>
+                                        <constraint firstItem="WBP-m8-gEC" firstAttribute="top" secondItem="8nu-fg-PdC" secondAttribute="bottom" constant="28" id="in5-bS-0mn"/>
+                                        <constraint firstItem="Qe7-MQ-yFD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VuI-qG-5ER" secondAttribute="top" constant="29" id="r8M-sI-RPy"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="bodyLabel" destination="UC7-32-yJu" id="H8K-p8-UN5"/>
                                     <outlet property="dateLabel" destination="8nu-fg-PdC" id="juU-xF-eGm"/>
                                     <outlet property="thirdLabel" destination="Qe7-MQ-yFD" id="sue-iD-mbA"/>
+                                    <outlet property="yearLabel" destination="WBP-m8-gEC" id="NVY-pe-CUZ"/>
                                     <segue destination="wMG-s1-Qz8" kind="push" identifier="pushToLogDetail" id="4v0-tI-Gxx"/>
                                 </connections>
                             </tableViewCell>
