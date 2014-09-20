@@ -113,12 +113,12 @@
     NSFetchRequest *fetchRequest = [self ropeLogFetchRequest];
     
     /*----SETS SECTION  treehouse video----*/
-//    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:coreDataStack.managedObjectContext sectionNameKeyPath:@"sectionName" cacheName:nil];
-//    _fetchedResultsController.delegate = self;
-    
-    /*----Removed Sections----*/
-    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:coreDataStack.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:coreDataStack.managedObjectContext sectionNameKeyPath:@"sectionName" cacheName:nil];
     _fetchedResultsController.delegate = self;
+    
+//    /*----Removed Sections----*/
+//    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:coreDataStack.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+//    _fetchedResultsController.delegate = self;
     
     return _fetchedResultsController;
 }

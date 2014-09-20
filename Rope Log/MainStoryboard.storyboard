@@ -85,9 +85,38 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <view key="view" contentMode="scaleToFill" id="RMU-Qz-oxc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-vx-oF7">
+                                <rect key="frame" x="20" y="86" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-Wv-5Ak">
+                                <rect key="frame" x="20" y="148" width="280" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IhW-Wv-5Ak" secondAttribute="trailing" constant="20" id="YF9-YT-Vuq"/>
+                            <constraint firstItem="wx3-3j-WhE" firstAttribute="top" secondItem="IhW-Wv-5Ak" secondAttribute="bottom" constant="20" id="YXK-rl-xew"/>
+                            <constraint firstItem="IhW-Wv-5Ak" firstAttribute="top" secondItem="DEf-vx-oF7" secondAttribute="bottom" constant="41" id="cbH-4D-cUY"/>
+                            <constraint firstItem="DEf-vx-oF7" firstAttribute="top" secondItem="zcl-f3-Yfa" secondAttribute="bottom" constant="22" id="jQM-N7-Iam"/>
+                            <constraint firstItem="IhW-Wv-5Ak" firstAttribute="leading" secondItem="RMU-Qz-oxc" secondAttribute="leading" constant="20" id="jfd-Ed-LJk"/>
+                            <constraint firstItem="DEf-vx-oF7" firstAttribute="leading" secondItem="RMU-Qz-oxc" secondAttribute="leading" constant="20" id="lgS-j0-e0f"/>
+                            <constraint firstAttribute="trailing" secondItem="DEf-vx-oF7" secondAttribute="trailing" constant="20" id="xdv-Uu-Q6F"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ffG-f8-Enu"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="IhW-Wv-5Ak" id="mGc-F1-tND"/>
+                        <outlet property="dateLabel" destination="DEf-vx-oF7" id="QZy-5r-sbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAI-v0-Shf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
