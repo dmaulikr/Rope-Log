@@ -10,22 +10,26 @@
 	<string>Rope Log</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>55ED3398079E1304279CC94D3ED0675CDF9F79E4</key>
+		<string>https://github.com/kjohnson423/Rope-Log.git</string>
 		<key>DDD4A56D-A279-42D9-9214-CAE03F7289E4</key>
 		<string>https://github.com/kjohnson423/Rope-Log.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Rope Log.xcodeproj/project.xcworkspace</string>
+	<string>Rope Log.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DDD4A56D-A279-42D9-9214-CAE03F7289E4</key>
+		<key>55ED3398079E1304279CC94D3ED0675CDF9F79E4</key>
 		<string>../..</string>
+		<key>DDD4A56D-A279-42D9-9214-CAE03F7289E4</key>
+		<string>../../../Rope Log</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/kjohnson423/Rope-Log.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DDD4A56D-A279-42D9-9214-CAE03F7289E4</string>
+	<string>55ED3398079E1304279CC94D3ED0675CDF9F79E4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>DDD4A56D-A279-42D9-9214-CAE03F7289E4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Rope Log</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>55ED3398079E1304279CC94D3ED0675CDF9F79E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Rope%20Log</string>
 		</dict>
 	</array>
 </dict>
