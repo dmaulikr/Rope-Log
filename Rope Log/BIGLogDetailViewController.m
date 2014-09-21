@@ -9,6 +9,8 @@
 #import "BIGLogDetailViewController.h"
 
 @interface BIGLogDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end
 
@@ -27,7 +29,33 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%@", self.thisLog);
+    NSLog(@"The long thing I wrote is: %@", self.thisLog.body);
+    
+    
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMMM d, yyyy"];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.thisLog.date];
+    
+    
+    
+    self.bodyLabel.text = self.thisLog.body;
+    self.dateLabel.text = [dateFormatter stringFromDate:date];
+    
+}
+
+/*-------Sets the text to the top of the label by "shrink wrapping" the frame around the text (sizeToFit) then rebuilding the original frame with CGRect-------*/
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    [self.bodyLabel sizeToFit];
+    
+    CGRect myFrame = self.bodyLabel.frame;
+    // Resize the frame's width to 280 (320 - margins)
+    // width could also be myOriginalLabelFrame.size.width
+    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 280, myFrame.size.height);
+    self.bodyLabel.frame = myFrame;
 }
 
 - (void)didReceiveMemoryWarning

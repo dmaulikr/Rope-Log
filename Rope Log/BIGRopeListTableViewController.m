@@ -76,6 +76,12 @@
     BIGRopeList *rope = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = rope.name;
     
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMM yyyy"];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:rope.date];
+    
+    cell.detailTextLabel.text = [dateFormatter stringFromDate:date];
+    
     
     
     return cell;

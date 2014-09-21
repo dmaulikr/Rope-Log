@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *thirdLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yearLabel;
 
 @end
 
@@ -21,8 +22,8 @@
 
 + (CGFloat)heightForEntry:(BIGRopeLog *)log {
     const CGFloat topMargin = 35.0f;
-    const CGFloat bottomMargin = 80.0f;
-    const CGFloat minHeight = 106.0f;
+    const CGFloat bottomMargin = 60.0f;
+    const CGFloat minHeight = 60.0f;
     
     UIFont *font = [UIFont systemFontOfSize:[UIFont systemFontSize]];
     
@@ -38,7 +39,18 @@
     [dateFormatter setDateFormat:@"EEE, MMMM d yyyy"];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:log.date];
     
-    self.dateLabel.text = [dateFormatter stringFromDate:date];
+    NSDateFormatter *monthFormatter = [[NSDateFormatter alloc] init];
+    [monthFormatter setDateFormat:@"MMM"];
+    
+    NSDateFormatter *dayFormatter = [[NSDateFormatter alloc] init];
+    [dayFormatter setDateFormat:@"d"];
+    
+    NSDateFormatter *yearFormatter = [[NSDateFormatter alloc] init];
+    [yearFormatter setDateFormat:@"yyyy"];
+    
+    self.dateLabel.text = [monthFormatter stringFromDate:date];
+    self.thirdLabel.text = [dayFormatter stringFromDate:date];
+    self.yearLabel.text = [yearFormatter stringFromDate:date];
 }
 
 @end
